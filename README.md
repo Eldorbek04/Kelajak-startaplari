@@ -1,6 +1,6 @@
 ## Guliston yoshlar texnoparki uchun 
 # Kelajak startaplari loyhasi uchun ishlab chiqarilgan web sayt
-### Loyha Laravel php dasturlsh tilida yozildi
+### Loyha Laravel php dasturlsh tilida yozildi loyhaning asosiy maqsadi yoshlarni oz loyhalarini real ishga aylantirish va ularni qollab quvvatlash uchun ishlab chiqilgan bu dastur asosiy dastur hisoblanadi va 12 viloyat uchun viloyat adminligi beriladi va oz viloyati dan kelgan loyhalarni qabul qiladilar.
 
 ## About Laravel
 
