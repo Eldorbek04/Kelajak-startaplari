@@ -1,5 +1,5 @@
-##Guliston yoshlar texnoparki uchun 
-#kelajak startaplari loyhasi uchun ishlab chiqarilgan web sayt
+## Guliston yoshlar texnoparki uchun 
+# kelajak startaplari loyhasi uchun ishlab chiqarilgan web sayt
 
 ## About Laravel
 
