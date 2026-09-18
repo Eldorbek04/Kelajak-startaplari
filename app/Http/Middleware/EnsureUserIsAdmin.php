@@ -1,0 +1,31 @@
+<?php
+
+declare(strict_types=1);
+
+namespace App\Http\Middleware;
+
+use Closure;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Symfony\Component\HttpFoundation\Response;
+
+class EnsureUserIsAdmin
+{
+    /**
+     * @param  Closure(Request): (Response)  $next
+     */
+    public function handle(Request $request, Closure $next): Response
+    {
+        $user = Auth::user();
+
+        if ($user === null || ! $user->isAdmin()) {
+            abort(403);
+        }
+
+        if ($user->isRegionAdmin() && $user->region_id === null) {
+            abort(403, 'Viloyat administratori uchun region_id belgilanmagan.');
+        }
+
+        return $next($request);
+    }
+}
